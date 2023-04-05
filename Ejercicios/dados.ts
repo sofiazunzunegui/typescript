@@ -7,4 +7,4 @@ la probabilidad de que todos los N dados muestren 6 es:
 P(Todos los dados muestran 6) = (1/6)^N
 Por ejemplo, si tiras 3 dados, la probabilidad de que todos ellos muestren el número 6 es:
 P(Todos los dados muestran 6) = (1/6)^3 = 0.0046*/
-
+//a resolver
