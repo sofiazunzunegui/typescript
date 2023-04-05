@@ -8,3 +8,7 @@ P(Todos los dados muestran 6) = (1/6)^N
 Por ejemplo, si tiras 3 dados, la probabilidad de que todos ellos muestren el número 6 es:
 P(Todos los dados muestran 6) = (1/6)^3 = 0.0046*/
 //a resolver
+import * as rls from "readline-sync";
+let numeroVecesTirarDado: number = rls.questionInt('ingrese numero: ');
+let dado: number = 1/6**numeroVecesTirarDado;
+console.log('la probabilidad de que salga 6 es de: ',dado,'%');
