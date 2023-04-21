@@ -27,6 +27,6 @@ let numero: number = rls.questionInt(
     cantidadNumerosIngresados++;
     numero = rls.questionInt("Introduzca un numero: ");
   }
-  console.log("La media es: ",sumaDeNumerosIngresados/cantidadNumerosIngresados); //5
-  console.log("El maximo es: ",maximo); //13
-  console.log("El minimo es: ",minimo); //-5
+  console.log("La media es: ",sumaDeNumerosIngresados/cantidadNumerosIngresados); 
+  console.log("El maximo es: ",maximo); 
+  console.log("El minimo es: ",minimo); 

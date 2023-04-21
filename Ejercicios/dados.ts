@@ -12,5 +12,5 @@ siendo que tiramos N dados (dato
 ingresado por el usuario)*/
 import * as rls from "readline-sync";
 let numeroVecesTirarDado: number = rls.questionInt('ingrese numero: ');
-let dado: number = 1/6**numeroVecesTirarDado;
+let dado: number=1/6**numeroVecesTirarDado;
 console.log('la probabilidad de que salga 6 es de: ',dado,'%');
