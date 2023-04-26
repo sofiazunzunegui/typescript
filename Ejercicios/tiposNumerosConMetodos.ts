@@ -1,5 +1,4 @@
 import * as rls from "readline-sync";
-
 // Almacene en un arreglo de dimensión N números (la
 //   cantidad es ingresada por el usuario)
 //  • Muestre cuántos números son positivos, cuántos son
@@ -12,21 +11,28 @@ import * as rls from "readline-sync";
 let positivo: number = 0;
 let negativo: number = 0;
 let cero: number = 0
-let dimensionDeseada: number = rls.questionInt('ingrese la dimension que desea ');
 
-let arreglo: number[] = new Array(dimensionDeseada);
-for (let i: number = 0; i < arreglo.length; i++) {
-    let num: number = rls.questionInt('ingrese el numero que desea ');
-    arreglo[i] = num
+function crearArreglo() {
+    let dimensionDeseada: number = rls.questionInt('ingrese la dimension que desea ');
+    let arreglo: number[] = new Array(dimensionDeseada);
+    for (let i: number = 0; i < arreglo.length; i++) {
+        let num: number = rls.questionInt('ingrese el numero que desea ');
+        arreglo[i] = num
+        cantidadValoresIngresados(num);
+    }
+    return arreglo;
 
+}
+function cantidadValoresIngresados(num: number) {
     if (num < 0) {
-        negativo++
+        negativo++;
     }
     else if (num > 0) {
-        positivo++
+        positivo++;
     } else {
-        cero++
+        cero++;
     }
 
 }
+console.log(crearArreglo());
 console.log('la cantidad de num positivos son ',positivo,'los num negativos son ',negativo,'y los ceros son ',cero);
